@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="ru">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Pizza DELICOUS</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <a href="">
+                    <img src="icon/pizza.png" alt="" class="logo__img">
+                    <p>Pizza<br><span>D E L I C O U S</span></p>
+                </a>
+            </div>
+            <div class="menu-burger__header">
+                <span></span>
+            </div>
+            <nav class="header__nav">
+                <ul class="main-menu">
+                    <li><a href="index.html">Дом</a></li>
+                    <li><a href="Menu.html">Меню</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slider">
+            <div class="item">
+                <div class="slide-text">
+                    <h2>Добро Пожаловать</h2>
+                    <h1>МЫ ПРИГОТОВИЛИ ЖЕЛАЕМЫЙ ВАМИ<br>РЕЦЕПТ ПИЦЦЫ</h1>
+                    <a href="">Заказать прямо сейчас</a>
+                    <a href="">Посмотреть меню</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-text">
+                    <h2>Вкусно</h2>
+                    <h1>Итальянская кухня</h1>
+                    <p><a href="">Заказать прямо сейчас</a></p>
+                    <p><a href="">Посмотреть меню</a></p>
+                    <img src="images/bg_1.png" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-text">
+                    <h2>Хрустящая</h2>
+                    <h1>Итальянская пицца</h1>
+                    <p><a href="">Заказать прямо сейчас</a></p>
+                    <p><a href="">Посмотреть меню</a></p>
+                    <img src="images/bg_2.png" alt="">
+                </div>
+            </div>
+            
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+              
+        </div>
+        <div class="slider-dots">
+            <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        </div> 
+        
+        <div class="contact">
+            <ul class="contacts">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    <h3>+7(000)-000-00-00</h3>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <h3>Ставропольская 174 г.Краснодар</h3>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                    </svg>
+                    <h3>Открыто: Понедельник-Пятница<br> 10:00 - 22:00</h3>
+                </li>
+            </ul>
+            <ul class="social-network">
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                </a></li>
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a></li>
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+        <div class="menu-about">
+            <img src="images/about.jpg" alt="">
+            <h1>ДОБРО ПОЖАЛОВАТЬ<br> В НАШУ <br><span>ПИЦЦЕРИЮ</span></h1>
+        </div>
+        <div class="menu-services">
+            <h1>НАШ СЕРВИС</h1>
+            <div class="services">
+                <div class="sevices-item">
+                    <img src="icon/diet.png" alt="">
+                    <h2>ЗДОРОВАЯ ПИЩА</h2>
+                </div> 
+                <div class="sevices-item">
+                    <img src="icon/fast.png" alt="">
+                    <h2>БЫСТРАЯ ДОСТАВКА</h2>
+                </div> 
+                <div class="sevices-item">
+                    <img src="icon\pizza-slice.png" alt="">
+                    <h2>ОРИГИНАЛЬНЫЕ РЕЦЕПТЫ</h2>
+                </div> 
+            </div>
+        </div>
+        <div class="menu-card">
+            <h1>ГОРЯЧИЕ БЛЮДА ИЗ ПИЦЦЫ</h1>
+            <ul class="goods">
+            </ul>
+        </div>
+        <div class="menu-price">
+            <h1>ЦЕНЫ НА НАШЕ МЕНЮ</h1>
+            <div class="menu-pizza">
+                <table>
+                    <tr class="menu-pizza__iteam">
+                        <td><img src="images/pizza-1.jpg" alt=""></td>
+                        <td>Итальянская Пицца</td>
+                        <td><span>450р</span></td>
+                    </tr>
+                    <tr class="menu-pizza__iteam">
+                        <td><img src="images/pizza-2.jpg" alt=""></td>
+                        <td>Гавайская Пицца</td>
+                        <td><span>500р</span></td>
+                    </tr>
+                    <tr class="menu-pizza__iteam">
+                        <td><img src="images/pizza-5.jpg" alt=""></td>
+                        <td>Греческая Пицца</td>
+                        <td><span>400р</span></td>
+                    </tr>
+                    <tr class="menu-pizza__iteam">
+                        <td><img src="images/pizza-4.jpg" alt=""></td>
+                        <td>Хрустящий Бекон</td>
+                        <td><span>420р</span></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr class="menu-pizza__iteam">
+                        <td><img src="images/pizza-5.jpg" alt=""></td>
+                        <td>Гавайская Специальная</td>
+                        <td><span>720р</span></td>
+                    </tr>
+                    <tr class="menu-pizza__iteam">
+                        <td><img src="images/pizza-4.jpg" alt=""></td>
+                        <td>Предельная перегрузка</td>
+                        <td><span>450р</span></td>
+                    </tr>
+                    <tr class="menu-pizza__iteam">
+                        <td><img src="images/pizza-7.jpg" alt=""></td>
+                        <td>Бекон Пицца</td>
+                        <td><span>450р</span></td>
+                    </tr>
+                    <tr class="menu-pizza__iteam">
+                        <td><img src="images/pizza-8.jpg" alt=""></td>
+                        <td>Ветчина и Ананас</td>
+                        <td><span>450р</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="menu-gallery">
+            <div class="gallery">
+                <img src="images/gallery-1.jpg" alt="">
+                <img src="images/gallery-2.jpg" alt="">
+                <img src="images/gallery-3.jpg" alt="">
+                <img src="images/gallery-4.jpg" alt="">
+            </div>
+            <div>
+                <ul class="icon-gallery">
+                    <li>
+                        <img src="icon/pizza-3.png" alt="">
+                        <h2>100</h2>
+                        <p>Рецептов</p>
+                    </li>
+                    <li>
+                        <img src="icon/trophy.png" alt="">
+                        <h2>55</h2>
+                        <p>Наград</p>
+                    </li>
+                    <li>
+                        <img src="icon/customer-review.png" alt="">
+                        <h2>5 000</h2>
+                        <p>Счастливых Клиентов</p>
+                    </li>
+                    <li>
+                        <img src="icon/free-icon-chef-hat-4100304.png" alt="">
+                        <h2>200</h2>
+                        <p>Персонал</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-blog">
+            <h1>НЕДАВНО ИЗ БЛОГА</h1>
+            <ul class="blog">
+                <li>
+                    <img src="images/image_1.jpg" alt="">
+                    <h3>У нас новые блюда,<br> заходи попробывать ;)</h3>
+                </li>
+                <li>
+                    <img src="images/image_2.jpg" alt="">
+                    <h3>Наивкуснейшая паста<br> в городе</h3>
+                </li>
+                <li>
+                    <img src="images/image_3.jpg" alt="">
+                    <h3>Новая Пицца<br> "Супер Мясная"</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-map-registration">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad75d1f4c7f75f7ff26caf899e0e2b22a2123bdac56b847fb0a1c1eabc28af470&amp;width=500&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+            <div class="form">
+               <h1>Связаться с Нами</h1> 
+               <form action="#">
+                   <ul>
+                       <li>
+                           <label for="first_name"></label>
+                           <input type="text" name="first_name" placeholder="Имя" required>
+                       </li>
+                       <li>
+                        <label for="last_name"></label>
+                        <input type="text" name="last_name" placeholder="Фамилия" required>
+                       </li>
+                       <li>
+                           <textarea name="comment"   cols="40" rows="10"></textarea>
+                       </li>
+                   </ul>
+                   <button>Отправить</button>
+               </form>
+            </div>
+        </div>
+        <script src="js/Slider.js"></script>
+        <script src="js/Cards.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/Header.js"></script>
+        </body>
+    <footer>
+        <ul class="footers">
+            <li>
+                <h3>О НАС</h3>
+                <div class="about-footers">
+                    <p>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+            </li>
+            <li >
+                <h3>БЛОГ</h3>
+                <div class="blog-footer">
+                    <img src="images/image_1.jpg" alt="">
+                    <a>У нас новые блюда,<br> заходи попробывать ;)</a>
+                </div>
+                <div class="blog-footer">
+                    <img src="images/image_3.jpg" alt="">
+                    <a>Новая Пицца <br> "Супер Мясная"</a>
+                </div>
+            </li>
+            <li>
+                <h3>Сервис</h3>
+                <div сlass="servis-footers">
+                    <p><a href="">Кухня</a></p>
+                    <p><a href="">Достака</a></p>
+                    <p><a href="">Качественные Продукты</a></p>
+                </div>
+            </li>
+            <li>
+                <h3>У ВАС ЕСТЬ ВОПРОСЫ?</h3>
+                <div class="contact-footers">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <a href="">Ставропольская 174 г.Краснодар</a>
+                </div>
+                <div class="contact-footers">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    <a href="">+7(000)-000-00-00</a>
+                </div>
+                <div class="contact-footers">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                    <a href="">info@pizzadelocus.ru</a>
+                </div>
+            </li>
+        </ul>
+    </footer>
+</html>
